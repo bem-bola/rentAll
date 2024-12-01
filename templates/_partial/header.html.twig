@@ -1,0 +1,45 @@
+<header >
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid col-11" id="container-nav">
+
+            <a class="navbar-brand" href="/"><img class='col-8' src="{{ asset('img/logo/logo-all-color.svg') }}" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse tata d-lg-flex justify-content-lg-between" id="navbarNavDropdown">
+                    <!-- Champ de recherche -->
+                <div class="col-3 d-flex" id="form-search">
+                    <form action="" class="col-9">
+                        <div class="form-group has-search d-flex bg-white">
+                            <input type="text" class="form-control border-0" placeholder="">
+                            <span class="bi bi-search form-control-feedback color-theme-green-2 bg-white p-2 fs-4"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <ul class="navbar-nav col-6 d-flex justify-content-end pe-5">
+                    <li class="nav-item">
+                        <a class="nav-link color-theme-green " aria-current="page" href="#">Annonces<span class="ps-2"><i class="bi bi-card-list"></i></span></a>
+                    </li>
+                        {# <li class="nav-item">#}
+                        {#  <a class="nav-link color-theme-green" href="#">Se connecter <span class="pe-2"><i class="bi bi-box-arrow-in-right"></i></span></a>#}
+                        {#   </li>#}
+                    <li class="nav-item">
+                        <a class="nav-link color-theme-green" href="#">Profil<span class="ps-2"><i class="bi bi-person"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-theme-green" href="#">Se déconnecter <span class="ps-2"><i class="bi bi-box-arrow-in-left"></i></span> </a>
+                    </li>
+
+                </ul>
+                <div class="col-3" id="add-item">
+                    <a class="btn-custom px-4 pb-3" href="#" title="Déposer une annonce">
+                        <span class="add-item-text">Déposer une annonce</span>
+                        <span class="pe-2"><i class="bi bi-plus-square-fill"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
