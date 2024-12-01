@@ -15,19 +15,10 @@
   font-weight: 700;
   font-style: normal;
 }
-
-//$color-theme-white:                 #F0F2F2;
-//$color-theme-green:                 #038C73;
-//$color-theme-green-2:               #1CAB8C;
-//$color-theme-success:               #45BF92;
-//$color-theme-mint-green:            #BDE9D2;
-//$color-theme-dark-olive-green:      #354034;
-//$color-theme-dark-moss-green:       #21261F;
-
+// Les couleurs
 .color-theme-white{
   color: $color-theme-white;
 }
-
 .color-theme-green{
   color: $color-theme-green;
 }
@@ -37,27 +28,50 @@
 .color-theme-dark-olive-green{
   color: $color-theme-dark-olive-green !important;
 }
+.color-theme-green-2{
+  background-color: $color-theme-green-2;
+}
+.color-theme-success{
+  color: $color-theme-success;
+}
 
 .bg-theme-mint-green {
   background-color: $color-theme-mint-green;
 }
+.bg-theme-white-2{
+  background-color: $color-theme-white-2;;
+}
+.bg-theme-green-2{
+  background-color: $color-theme-green-2;
+}
+.bg-theme-success{
+  background-color: $color-theme-success;
+}
+
+.border-theme-dark-olive-green{
+  border: 1px solid $color-theme-dark-olive-green ;
+}
+
+main{
+  min-height: 4vh;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   a{
     text-decoration: none;
   }
+  color: $color-theme-dark-olive-green;
 }
 
 header {
-
-  background-color: $color-theme-white-2;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0 1px 0, rgba(17, 17, 26, 0.1) 0 0 8px;
 
   form{
     div{
       padding: 0.1em !important;
       border-radius: 10px !important;
-      border: 2px solid $color-theme-mint-green !important;
+      border: 1px solid $color-theme-mint-green !important;
     }
     div:focus{
       border: 3px solid $color-theme-mint-green !important;
@@ -76,6 +90,22 @@ header {
     color: $color-theme-dark-moss-green;
   }
 
+}
+
+footer{
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  a:hover{
+    color: $color-theme-green !important;
+    font-size: 1.1em;
+  }
+  #icon-network a:hover{
+    font-size: 1.5em;
+    border: 1px solid $success;
+  }
+
+  #icon-network a{
+    border: 1px solid #35403450;
+  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 991px) {
