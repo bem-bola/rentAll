@@ -1,3 +1,206 @@
 @import "_variables.scss";
 @import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+// Les couleurs
+.color-theme-white{
+  color: $color-theme-white;
+}
+.color-theme-green{
+  color: $color-theme-green;
+}
+.color-theme-green-2{
+  color: $color-theme-green-2;
+}
+.color-theme-dark-olive-green{
+  color: $color-theme-dark-olive-green !important;
+}
+.color-theme-green-2{
+  background-color: $color-theme-green-2;
+}
+.color-theme-success{
+  color: $color-theme-success;
+}
+
+.bg-theme-mint-green {
+  background-color: $color-theme-mint-green;
+}
+.bg-theme-white-2{
+  background-color: $color-theme-white-2;;
+}
+.bg-theme-green-2{
+  background-color: $color-theme-green-2;
+}
+.bg-theme-success{
+  background-color: $color-theme-success;
+}
+
+.border-theme-dark-olive-green{
+  border: 1px solid $color-theme-dark-olive-green ;
+}
+
+main{
+  min-height: 4vh;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  a{
+    text-decoration: none;
+  }
+  color: $color-theme-dark-olive-green;
+}
+
+header {
+  box-shadow: rgba(17, 17, 26, 0.05) 0 1px 0, rgba(17, 17, 26, 0.1) 0 0 8px;
+
+  form{
+    div{
+      padding: 0.1em !important;
+      border-radius: 10px !important;
+      border: 1px solid $color-theme-mint-green !important;
+    }
+    div:focus{
+      border: 3px solid $color-theme-mint-green !important;
+    }
+  }
+  .btn-custom{
+    font-size: 1.2em;
+    background-color: $color-theme-success;
+    color: $color-theme-white;
+    padding: 0.8em 0.8em 0.7em 0.8em !important;
+    border-radius: 10px !important;
+  }
+
+  li:hover{
+    font-size: 1.25em;
+    color: $color-theme-dark-moss-green;
+  }
+
+}
+
+footer{
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  a:hover{
+    color: $color-theme-green !important;
+    font-size: 1.1em;
+  }
+  #icon-network a:hover{
+    font-size: 1.5em;
+    border: 1px solid $success;
+  }
+
+  #icon-network a{
+    border: 1px solid #35403450;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 991px) {
+  header{
+
+    #form-search{
+      width: 100% !important;
+      display: flex;
+      justify-content: center !important;
+      form{
+        width: 70% !important;
+        input{
+          padding: 0.8em 0.8em 0.7em 0.8em !important;
+          border-radius: 10px !important;
+        }
+      }
+    }
+
+    ul{
+      width: 100% !important;
+      li{
+        a{
+          width: 100% !important;
+          text-align: center;
+        }
+      }
+    }
+
+
+    #add-item {
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
+      margin: 1em 0;
+
+      .btn-custom {
+        color: $color-theme-white;
+        padding: 0.8em 0.8em 0.7em 0.8em !important;
+        border-radius: 10px !important;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1519px) {
+  header nav{
+    width: 95% !important;
+    margin: auto;
+    // Formulaire recherche
+    #form-search{
+      width: 30% !important;
+      input{
+        padding: 0.8em 0.8em 0.7em 0.8em !important;
+        border-radius: 10px !important;
+      }
+    }
+
+    .has-search .form-control-feedback {
+      top: 1.5em !important;
+      left: 10em !important;
+    }
+
+    ul{
+      width: 65% !important;
+
+      li:hover{
+        font-size: 1.1em;
+        color: $color-theme-dark-moss-green;
+      }
+    }
+
+    #add-item{
+      width: 20%;
+      .btn-custom{
+        color: $color-theme-white;
+        padding: 0.8em 0.8em 0.5em 0.8em !important;
+        border-radius: 10px !important;
+      }
+      .add-item-text{
+        display: none;
+      }
+      span{
+        padding: 0 !important;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1015px){
+  .has-search .form-control-feedback {
+    top: 1.5em !important;
+    left: 15em !important;
+  }
+}
+
+
+
 
