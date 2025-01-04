@@ -2,6 +2,11 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
+
+a, li {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
@@ -15,9 +20,19 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeueRoman.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 // Les couleurs
 .color-theme-white{
   color: $color-theme-white;
+}
+.color-theme-white-2{
+  color: $color-theme-white-2;
 }
 .color-theme-green{
   color: $color-theme-green;
@@ -52,14 +67,48 @@
   border: 1px solid $color-theme-dark-olive-green ;
 }
 
+
+
+
+
+
+/* Personnalisation du datepicker */
+
+.flatpickr-calendar, .flatpickr-months, .flatpickr-day{
+  background-color: $color-theme-white !important;
+
+  .flatpickr-day:hover{
+    color: $color-theme-success !important;
+    border-radius: 50%;
+    border-color: $color-theme-success !important;
+  }
+
+  .inRange{
+    color: $color-theme-success !important;
+    background-color: inherit !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-color: $color-theme-white !important;
+  }
+  .selected{
+    background-color: inherit !important;
+    color: $color-theme-success !important;
+    border-color: $color-theme-success;
+    border-radius: 50% !important;
+  }
+}
+
 main{
   min-height: 4vh;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family:  'Helvetica Neue', 'Roboto', sans-serif;
   a{
     text-decoration: none;
+  }
+  li{
+    list-style: none;
   }
   color: $color-theme-dark-olive-green;
 }
@@ -91,6 +140,81 @@ header {
   }
 
 }
+
+
+main{
+  #page-item-details{
+
+    #btn-details-img{
+      bottom: 1.5%;
+      right: 1%;
+      p{
+        cursor: pointer;
+      }
+    }
+    #content-icon-favorite{
+      bottom: 22%;
+      right: 1%;
+    }
+  }
+
+  // Carousel:
+  #prev-btn {
+    left: 29%;
+  }
+
+  #next-btn {
+    right: 29%;
+  }
+
+  .thumbnails div {
+    height: 10%;
+  }
+
+  .thumbnail {
+    height: 80px;
+    width: 100px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
+
+  .thumbnail.active {
+    opacity: 1;
+    border: 2px solid;
+  }
+
+  .carousel-images {
+    height: 60vh;
+  }
+
+  .carousel-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-active {
+    display: block;
+  }
+
+  .img-hide {
+    display: none;
+  }
+
+  .fill a {
+    text-decoration: underline $color-theme-green !important;
+  }
+
+  #map{
+    height: 300px;
+  }
+}
+
+
+
+
+
+
 
 footer{
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
